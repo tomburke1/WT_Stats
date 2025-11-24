@@ -1,0 +1,57 @@
+team,expected_win_rate
+"('Billy Bongo#EUW', 'Sporus#EUW', 'Tibbtokontop#EUW', 'WT BrokenSword#EUW', 'WT GigaChad#1070')",100.0
+"('Billy Bongo#EUW', 'BuddhaGoesSmite#EUW', 'Tibbtokontop#EUW', 'WT BrokenSword#EUW', 'WT GigaChad#1070')",100.0
+"('Billy Bongo#EUW', 'BuddhaGoesSmite#EUW', 'WT Final Stand#EUW', 'WT GigaChad#1070', 'WT Nasty Boy#EUW')",76.92307692307693
+"('Billy Bongo#EUW', 'BuddhaGoesSmite#EUW', 'Sporus#EUW', 'WT BrokenSword#EUW', 'WT Final Stand#EUW')",66.66666666666666
+"('Billy Bongo#EUW', 'BuddhaGoesSmite#EUW', 'WT BrokenSword#EUW', 'WT Final Stand#EUW', 'WT GigaChad#1070')",66.66666666666666
+"('Billy Bongo#EUW', 'BuddhaGoesSmite#EUW', 'Sporus#EUW', 'Tibbtokontop#EUW', 'WT Final Stand#EUW')",61.111111111111114
+"('Billy Bongo#EUW', 'BuddhaGoesSmite#EUW', 'Sporus#EUW', 'Tibbtokontop#EUW', 'WT BrokenSword#EUW')",50.0
+"('Billy Bongo#EUW', 'BuddhaGoesSmite#EUW', 'WT BrokenSword#EUW', 'WT Final Stand#EUW', 'WT Nasty Boy#EUW')",50.0
+"('Billy Bongo#EUW', 'Sporus#EUW', 'Tibbtokontop#EUW', 'WT Final Stand#EUW', 'WT GigaChad#1070')",50.0
+"('Billy Bongo#EUW', 'BuddhaGoesSmite#EUW', 'Sporus#EUW', 'WT Final Stand#EUW', 'WT Nasty Boy#EUW')",50.0
+"('Billy Bongo#EUW', 'BuddhaGoesSmite#EUW', 'Tibbtokontop#EUW', 'WT Final Stand#EUW', 'WT Nasty Boy#EUW')",50.0
+"('Billy Bongo#EUW', 'BuddhaGoesSmite#EUW', 'Tibbtokontop#EUW', 'WT Final Stand#EUW', 'WT GigaChad#1070')",50.0
+"('BuddhaGoesSmite#EUW', 'Tibbtokontop#EUW', 'WT Final Stand#EUW', 'WT GigaChad#1070', 'WT Nasty Boy#EUW')",50.0
+"('Billy Bongo#EUW', 'Tibbtokontop#EUW', 'WT Final Stand#EUW', 'WT GigaChad#1070', 'WT Nasty Boy#EUW')",50.0
+"('Billy Bongo#EUW', 'BuddhaGoesSmite#EUW', 'Tibbtokontop#EUW', 'WT GigaChad#1070', 'WT Nasty Boy#EUW')",47.783133203312936
+"('Billy Bongo#EUW', 'BuddhaGoesSmite#EUW', 'Sporus#EUW', 'WT GigaChad#1070', 'WT Nasty Boy#EUW')",46.768719775106405
+"('BuddhaGoesSmite#EUW', 'Sporus#EUW', 'WT Final Stand#EUW', 'WT GigaChad#1070', 'WT Nasty Boy#EUW')",46.52554285832199
+"('Billy Bongo#EUW', 'Sporus#EUW', 'WT Final Stand#EUW', 'WT GigaChad#1070', 'WT Nasty Boy#EUW')",46.39733219568439
+"('Billy Bongo#EUW', 'Tibbtokontop#EUW', 'WT BrokenSword#EUW', 'WT Final Stand#EUW', 'WT Nasty Boy#EUW')",46.15384615384615
+"('Billy Bongo#EUW', 'BuddhaGoesSmite#EUW', 'WT BrokenSword#EUW', 'WT GigaChad#1070', 'WT Nasty Boy#EUW')",46.12057162695826
+"('BuddhaGoesSmite#EUW', 'Sporus#EUW', 'Tibbtokontop#EUW', 'WT GigaChad#1070', 'WT Nasty Boy#EUW')",46.108272501903556
+"('Billy Bongo#EUW', 'BuddhaGoesSmite#EUW', 'Sporus#EUW', 'Tibbtokontop#EUW', 'WT Nasty Boy#EUW')",46.092571674041736
+"('Billy Bongo#EUW', 'Sporus#EUW', 'Tibbtokontop#EUW', 'WT GigaChad#1070', 'WT Nasty Boy#EUW')",45.980061839265964
+"('BuddhaGoesSmite#EUW', 'WT BrokenSword#EUW', 'WT Final Stand#EUW', 'WT GigaChad#1070', 'WT Nasty Boy#EUW')",45.87739471017384
+"('Sporus#EUW', 'Tibbtokontop#EUW', 'WT Final Stand#EUW', 'WT GigaChad#1070', 'WT Nasty Boy#EUW')",45.73688492248156
+"('BuddhaGoesSmite#EUW', 'Tibbtokontop#EUW', 'WT BrokenSword#EUW', 'WT GigaChad#1070', 'WT Nasty Boy#EUW')",45.46012435375541
+"('Billy Bongo#EUW', 'Tibbtokontop#EUW', 'WT BrokenSword#EUW', 'WT GigaChad#1070', 'WT Nasty Boy#EUW')",45.33191369111781
+"('Billy Bongo#EUW', 'BuddhaGoesSmite#EUW', 'Sporus#EUW', 'WT BrokenSword#EUW', 'WT GigaChad#1070')",45.261086187320146
+"('Tibbtokontop#EUW', 'WT BrokenSword#EUW', 'WT Final Stand#EUW', 'WT GigaChad#1070', 'WT Nasty Boy#EUW')",45.08873677433341
+"('BuddhaGoesSmite#EUW', 'Sporus#EUW', 'WT BrokenSword#EUW', 'WT Final Stand#EUW', 'WT GigaChad#1070')",45.01790927053573
+"('Billy Bongo#EUW', 'Sporus#EUW', 'WT BrokenSword#EUW', 'WT Final Stand#EUW', 'WT GigaChad#1070')",44.88969860789814
+"('BuddhaGoesSmite#EUW', 'Sporus#EUW', 'Tibbtokontop#EUW', 'WT BrokenSword#EUW', 'WT GigaChad#1070')",44.600638914117305
+"('BuddhaGoesSmite#EUW', 'Sporus#EUW', 'WT BrokenSword#EUW', 'WT GigaChad#1070', 'WT Nasty Boy#EUW')",44.44571092554888
+"('Billy Bongo#EUW', 'Tibbtokontop#EUW', 'WT BrokenSword#EUW', 'WT Final Stand#EUW', 'WT GigaChad#1070')",44.44444444444444
+"('Billy Bongo#EUW', 'Sporus#EUW', 'WT BrokenSword#EUW', 'WT GigaChad#1070', 'WT Nasty Boy#EUW')",44.31750026291129
+"('Sporus#EUW', 'Tibbtokontop#EUW', 'WT BrokenSword#EUW', 'WT Final Stand#EUW', 'WT GigaChad#1070')",44.2292513346953
+"('BuddhaGoesSmite#EUW', 'Sporus#EUW', 'WT BrokenSword#EUW', 'WT Final Stand#EUW', 'WT Nasty Boy#EUW')",44.18683318090264
+"('Billy Bongo#EUW', 'Sporus#EUW', 'WT BrokenSword#EUW', 'WT Final Stand#EUW', 'WT Nasty Boy#EUW')",44.05862251826503
+"('Sporus#EUW', 'Tibbtokontop#EUW', 'WT BrokenSword#EUW', 'WT GigaChad#1070', 'WT Nasty Boy#EUW')",43.65705298970845
+"('Sporus#EUW', 'Tibbtokontop#EUW', 'WT BrokenSword#EUW', 'WT Final Stand#EUW', 'WT Nasty Boy#EUW')",43.3981752450622
+"('Billy Bongo#EUW', 'BuddhaGoesSmite#EUW', 'Tibbtokontop#EUW', 'WT BrokenSword#EUW', 'WT Final Stand#EUW')",41.66666666666667
+"('BuddhaGoesSmite#EUW', 'Sporus#EUW', 'Tibbtokontop#EUW', 'WT Final Stand#EUW', 'WT Nasty Boy#EUW')",36.36363636363637
+"('BuddhaGoesSmite#EUW', 'Tibbtokontop#EUW', 'WT BrokenSword#EUW', 'WT Final Stand#EUW', 'WT GigaChad#1070')",28.57142857142857
+"('Billy Bongo#EUW', 'BuddhaGoesSmite#EUW', 'Tibbtokontop#EUW', 'WT BrokenSword#EUW', 'WT Nasty Boy#EUW')",25.0
+"('Billy Bongo#EUW', 'BuddhaGoesSmite#EUW', 'Sporus#EUW', 'Tibbtokontop#EUW', 'WT GigaChad#1070')",0.0
+"('Billy Bongo#EUW', 'Sporus#EUW', 'Tibbtokontop#EUW', 'WT BrokenSword#EUW', 'WT Final Stand#EUW')",0.0
+"('Billy Bongo#EUW', 'BuddhaGoesSmite#EUW', 'Sporus#EUW', 'WT BrokenSword#EUW', 'WT Nasty Boy#EUW')",0.0
+"('Billy Bongo#EUW', 'BuddhaGoesSmite#EUW', 'Sporus#EUW', 'WT Final Stand#EUW', 'WT GigaChad#1070')",0.0
+"('Billy Bongo#EUW', 'Sporus#EUW', 'Tibbtokontop#EUW', 'WT BrokenSword#EUW', 'WT Nasty Boy#EUW')",0.0
+"('BuddhaGoesSmite#EUW', 'Sporus#EUW', 'Tibbtokontop#EUW', 'WT Final Stand#EUW', 'WT GigaChad#1070')",0.0
+"('Billy Bongo#EUW', 'WT BrokenSword#EUW', 'WT Final Stand#EUW', 'WT GigaChad#1070', 'WT Nasty Boy#EUW')",0.0
+"('BuddhaGoesSmite#EUW', 'Sporus#EUW', 'Tibbtokontop#EUW', 'WT BrokenSword#EUW', 'WT Final Stand#EUW')",0.0
+"('Billy Bongo#EUW', 'Sporus#EUW', 'Tibbtokontop#EUW', 'WT Final Stand#EUW', 'WT Nasty Boy#EUW')",0.0
+"('BuddhaGoesSmite#EUW', 'Sporus#EUW', 'Tibbtokontop#EUW', 'WT BrokenSword#EUW', 'WT Nasty Boy#EUW')",0.0
+"('BuddhaGoesSmite#EUW', 'Tibbtokontop#EUW', 'WT BrokenSword#EUW', 'WT Final Stand#EUW', 'WT Nasty Boy#EUW')",0.0
+"('Sporus#EUW', 'WT BrokenSword#EUW', 'WT Final Stand#EUW', 'WT GigaChad#1070', 'WT Nasty Boy#EUW')",0.0
