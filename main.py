@@ -286,6 +286,7 @@ def compute_team_prob_for_lineup(lineup_by_role):
 # =========================================
 
 app = Dash(__name__)
+server = app.server
 
 
 def role_block(role_name, default_player=None):
