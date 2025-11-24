@@ -373,6 +373,15 @@ app.layout = html.Div(
             [
                 html.Div(
                     [
+
+                        html.Div(
+                            id="team-win-summary",
+                            style={"marginTop": "1rem", "fontSize": "1.2rem", "fontWeight": "bold"},
+                        ),
+                        html.Div(
+                            id="team-win-detail",
+                            style={"marginTop": "0.5rem", "fontSize": "0.9rem", "whiteSpace": "pre-line"},
+                        ),
                         html.H4("Simulation settings"),
                         html.Div("Number of simulated games:", style={"fontSize": "0.9rem"}),
                         dcc.Slider(
@@ -382,14 +391,6 @@ app.layout = html.Div(
                             step=50,
                             value=300,
                             marks={50: "50", 300: "300", 1000: "1000"},
-                        ),
-                        html.Div(
-                            id="team-win-summary",
-                            style={"marginTop": "1rem", "fontSize": "1.2rem", "fontWeight": "bold"},
-                        ),
-                        html.Div(
-                            id="team-win-detail",
-                            style={"marginTop": "0.5rem", "fontSize": "0.9rem", "whiteSpace": "pre-line"},
                         ),
                     ],
                     style={"flex": "0 0 30%", "padding": "0.5rem"},
