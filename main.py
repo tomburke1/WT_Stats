@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 import joblib
 
-from dash import Dash, html, dcc, Input, Output
+from dash import Dash, html, dcc, Input, Output, State
 import plotly.graph_objs as go
 from itertools import permutations
 
@@ -346,9 +346,7 @@ app.layout = html.Div(
         ),
         html.Div(
             [
-           
-
- role_block(role, default_players_for_roles.get(role))
+                role_block(role, default_players_for_roles.get(role))
                 for role in ROLES
             ],
             style={"display": "flex", "flexWrap": "wrap", "justifyContent": "space-between"},
@@ -368,12 +366,37 @@ app.layout = html.Div(
             ],
             style={"margin": "1rem 0", "textAlign": "center"},
         ),
+
+        # NEW BLOCK: Optimal role selection for a given 5-stack
+        html.Div(
+            [
+                html.H4("Optimal role selection for chosen players"),
+                dcc.Dropdown(
+                    id="optimal-role-players",
+                    options=[{"label": p, "value": p} for p in all_players],
+                    multi=True,
+                    placeholder="Select exactly 5 players",
+                    style={"maxWidth": "600px", "margin": "0 auto 0.5rem auto"},
+                ),
+                html.Button(
+                    "Find best roles for selected players",
+                    id="optimal-role-button",
+                    n_clicks=0,
+                    style={"marginRight": "0.5rem"},
+                ),
+                html.Div(
+                    id="optimal-role-output",
+                    style={"marginTop": "0.5rem", "fontSize": "0.9rem"},
+                ),
+            ],
+            style={"margin": "1rem 0", "textAlign": "center"},
+        ),
+
         html.Hr(),
         html.Div(
             [
                 html.Div(
                     [
-
                         html.Div(
                             id="team-win-summary",
                             style={"marginTop": "1rem", "fontSize": "1.2rem", "fontWeight": "bold"},
@@ -614,7 +637,7 @@ def update_simulation(*values):
 
 
 # =========================================
-# CALLBACK: FIND BEST TEAM COMPOSITION
+# CALLBACK: FIND BEST TEAM COMPOSITION (GLOBAL)
 # =========================================
 
 @app.callback(
@@ -666,6 +689,84 @@ def find_best_team(n_clicks):
     lines = [
         html.Div(
             "Best estimated baseline win probability "
+            f"(confidence & player-winrate adjusted): {best_prob*100:.1f}%",
+            style={"fontWeight": "bold", "marginBottom": "0.25rem"},
+        ),
+        html.Div(
+            f"Lineup data confidence: {best_conf:.2f}",
+            style={"marginBottom": "0.5rem"},
+        ),
+    ]
+    for role in ROLES:
+        lines.append(html.Div(f"{role}: {best_lineup[role]}"))
+
+    return lines
+
+
+# =========================================
+# CALLBACK: OPTIMAL ROLES FOR A GIVEN 5-STACK
+# =========================================
+
+@app.callback(
+    Output("optimal-role-output", "children"),
+    Input("optimal-role-button", "n_clicks"),
+    State("optimal-role-players", "value"),
+    prevent_initial_call=True,
+)
+def find_best_roles_for_selected_players(n_clicks, selected_players):
+    if not n_clicks:
+        return ""
+
+    if not selected_players:
+        return "Please select 5 players first."
+
+    if len(selected_players) != len(ROLES):
+        return (
+            f"Please select exactly {len(ROLES)} distinct players. "
+            f"Currently selected: {len(selected_players)}."
+        )
+
+    # Ensure each selected player has at least one eligible role
+    for p in selected_players:
+        eligible_roles = [r for r in ROLES if p in valid_players_by_role.get(r, [])]
+        if not eligible_roles:
+            return (
+                f"{p} does not have ≥{MIN_ROLE_GAMES} games in any role, "
+                "so an optimal assignment cannot be found for this set."
+            )
+
+    best_prob = -1.0
+    best_lineup = None
+    best_conf = None
+
+    # Try all permutations of assigning these players to roles
+    for perm in permutations(selected_players, len(ROLES)):
+        ok = True
+        lineup_by_role = {}
+        for role, player in zip(ROLES, perm):
+            if player not in valid_players_by_role.get(role, []):
+                ok = False
+                break
+            lineup_by_role[role] = player
+
+        if not ok:
+            continue
+
+        prob, conf = compute_team_prob_for_lineup(lineup_by_role)
+        if prob > best_prob:
+            best_prob = prob
+            best_lineup = lineup_by_role
+            best_conf = conf
+
+    if best_lineup is None:
+        return (
+            "No valid role assignment found where each selected player has "
+            f"≥{MIN_ROLE_GAMES} games in their assigned role and all roles are filled."
+        )
+
+    lines = [
+        html.Div(
+            "Best estimated win probability for this 5-stack "
             f"(confidence & player-winrate adjusted): {best_prob*100:.1f}%",
             style={"fontWeight": "bold", "marginBottom": "0.25rem"},
         ),
