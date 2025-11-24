@@ -18,7 +18,7 @@ FLEX_STATS_PATH = "flex_game_stats.csv"        # for sample sizes + overall winr
 
 ROLES = ["TOP", "JUNGLE", "MIDDLE", "BOTTOM", "UTILITY"]
 
-# Team-level model features (must match how you trained team_model.pkl)
+# Team-level model features (must match how we trained team_model.pkl)
 TEAM_FEATURES = [
     "goldEarned",                     # team total
     "kills",                          # team total
