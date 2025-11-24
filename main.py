@@ -14,7 +14,7 @@ TEAM_MODEL_PATH = "team_model.pkl"
 TEAM_SCALER_PATH = "team_scaler.pkl"
 PLAYER_BASELINES_PATH = "player_role_baselines.csv"
 TEAM_LEVEL_DATASET_PATH = "team_level_dataset.csv"  # for enemy baselines (optional)
-FLEX_STATS_PATH = "riot/flex_game_stats.csv"        # for sample sizes + overall winrates
+FLEX_STATS_PATH = "flex_game_stats.csv"        # for sample sizes + overall winrates
 
 ROLES = ["TOP", "JUNGLE", "MIDDLE", "BOTTOM", "UTILITY"]
 
