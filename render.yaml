@@ -5,5 +5,5 @@ services:
     plan: free
     branch: main
     buildCommand: pip install -r requirements.txt
-    startCommand: gunicorn app_team_sim:app.server
+    startCommand: gunicorn main:app.server
     autoDeploy: true
