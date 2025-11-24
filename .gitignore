@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.pyc
+
+# Virtual environments
+venv/
+myenv/
+.env/
+
+# OS files
+.DS_Store
+
+# Model files - DO NOT COMMIT
+*.pkl
+
+# Data & logs
+*.csv
+*.sav
+*.txt
+*.log
+
+# Riot API keys and configs
+config.yaml
+*.env
+
+# Build artifacts
+*.egg-info/
